@@ -1,0 +1,3 @@
+[submodule "UCB_CS61B_DSnA"]
+	path = UCB_CS61B_DSnA
+	url = git@github.com:Berkeley-CS61B/skeleton-sp25.git
