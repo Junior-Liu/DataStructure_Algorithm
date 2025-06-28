@@ -26,9 +26,12 @@ public class JavaExercises {
      */
     public static void printIndexed(String s) {
         // TODO: Fill in this function
+        String line = "";
         for (int i = 0; i < s.length(); i++) {
-            System.out.println(s[i] + " " + (s.length() - i));
+            line = line + s.charAt(i);
+            line = line + (s.length() - i - 1);
         }
+        System.out.println(line);
     }
 
     /**
@@ -37,7 +40,13 @@ public class JavaExercises {
      */
     public static String stutter(String s) {
         // TODO: Fill in this function
-        return null;
+        int len = s.length();
+        String t = "";
+        for (int i = 0; i < len; i ++) {
+            t = t + s.charAt(i) + s.charAt(i);
+            //System.out.println(t);
+        }
+        return t;
     }
 
     /**
@@ -51,6 +60,10 @@ public class JavaExercises {
      */
     public static int quadrant(int x, int y) {
         // TODO: Fill in this function
+        if (x > 0 && y > 0) return 1;
+        else if (x < 0 && y > 0) return 2;
+        else if (x < 0 && y < 0) return 3;
+        else if (x > 0 && y < 0) return 4;
         return 0;
     }
 
